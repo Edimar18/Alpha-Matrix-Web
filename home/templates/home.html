@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="container">
+        <p id='TITLE' style="margin-left: 20px; margin-top: 5px;">Alpha Matrix Ultimate</p>
+        <div class="container" >
+            <div class="row" id="model-view">
+                <div class="col" id='box_1' style="margin-left: 10px;">
+                    Model 1 Prediction
+                    <div class="row" style="padding-top: 8px;">
+                        <h1 class="col-9 output" >HOLD</h1>
+                        <div class="col volatility" style="padding-top: 5px;">
+                            <p class="row" style="font-size: 14px; height: 8px;">Volatility</p>
+                            <p class="row" style="font-size: 12px; font-weight: bold;">NORMAL</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col" id='box_2' >
+                    Model 2 Prediction
+                    <div class="row" style="padding-top: 8px;">
+                        <h1 class="col-9 output" >HOLD</h1>
+                        <div class="col volatility" style="padding-top: 5px;">
+                            <p class="row" style="font-size: 14px; height: 8px;">Volatility</p>
+                            <p class="row" style="font-size: 12px; font-weight: bold;">NORMAL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" id="box_3" style="margin-right: 10px;">
+                    Market Summary
+                    <div class="row" style="height: 25px;margin-top: 8px; ">
+                        <p class="col-9" id="current-time">Current Time</p>
+                        <p class="col" id="value">0.00</p>
+                    </div>
+                    <div class="row" style="height: 25px;">
+                        <p class="col-9" id="sessiom">Session</p>
+                        <p class="col" id="value">London</p>
+                    </div>
+                    <div class="row" style="height: 25px;">
+                        <p class="col-9" id="trend">Trend</p>
+                        <p class="col" id="value">0.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container" id="graph-view" style=" height: 370px; margin-top: 10px; border-radius: 2px; background-color: #fff;">
+                <h4>Market Analysis</h4>
+                <div class="container" style="border: 1px solid rgb(61, 64, 61); height: 320px; border-radius: 1px;">
+
+                </div>
+            </div>
+
+            <div class="container" id="analysis-view">
+
+
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    body {
+        background-color: rgb(228, 228, 228);
+    }
+    .container #TITLE {
+        color: #364aab;
+        font-size: 15px;
+        font-family: "Oswald", serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+    }
+    #model-view #box_1 {
+        background-color: #fff;
+        border-radius: 15px;
+        height: 130px;
+        font-family: "Poppins", serif;
+        font-weight: 300;
+        font-style: normal;
+        padding-top: 5px;
+    }
+    #model-view #box_2 {
+        background-color: #fff;
+        border-radius: 15px;
+        height: 130px;
+        font-family: "Poppins", serif;
+        font-weight: 300;
+        font-style: normal;
+        margin: 0 10px 0 10px;
+        padding-top: 5px;
+    }
+    #model-view #box_3 {
+        background-color: #fff;
+        border-radius: 15px;
+        height: 130px;
+        font-family: "Poppins", serif;
+        font-weight: 300;
+        font-style: normal;
+        padding-top: 5px;
+    }
+    
+
+</style>
+</html>
